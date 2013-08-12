@@ -23,7 +23,7 @@ Cocos Builder Project
 - Since the project use cocos2dx version 2.1.4,  Cocos Builder 3.0 should be used
 - Publish path is Resources/ccb
 
-https://raw.github.com/liemvu/samplecocos2dx/master/cocosbuilder.png
+[logo]:https://raw.github.com/liemvu/samplecocos2dx/master/cocosbuilder.png
 
 Shared Resources
 ==============
@@ -45,7 +45,7 @@ iOS Project
 - It imports the Shared C++ source code directly
 - Sub folder in the resource folder should be added as reference type
 
-https://raw.github.com/liemvu/samplecocos2dx/master/xcode.png
+[logo]:https://raw.github.com/liemvu/samplecocos2dx/master/xcode.png
 
 Android Project
 ==============
@@ -57,4 +57,4 @@ Android Project
 - The Classes folder must be added as C++ source folder
 - Every time you added new C++ source code, you have to  add it in the Android.mk file in jni folder.
 
-https://raw.github.com/liemvu/samplecocos2dx/master/android.png
+[logo]:https://raw.github.com/liemvu/samplecocos2dx/master/android.png
