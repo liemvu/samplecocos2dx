@@ -18,10 +18,6 @@ CCParallaxNodeExtras::CCParallaxNodeExtras() {
     CCParallaxNode();
 }
 
-CCParallaxNodeExtras * CCParallaxNodeExtras::node() {
-    return new CCParallaxNodeExtras;
-}
-
 void CCParallaxNodeExtras::incrementOffset(CCPoint offset, CCNode *node) {
     for(unsigned int i=0; i<m_pParallaxArray->num; i++) {
         CCPointObject *point = (CCPointObject *) m_pParallaxArray->arr[i];

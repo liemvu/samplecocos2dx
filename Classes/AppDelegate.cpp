@@ -1,8 +1,7 @@
 #include "AppDelegate.h"
 
 #include "cocos2d.h"
-#include "HelloWorldScene.h"
-
+#include "MainLayer.h"
 USING_NS_CC;
 
 
@@ -42,18 +41,21 @@ bool AppDelegate::applicationDidFinishLaunching()
     // set FPS. the default value is 1.0/60 if you don't call this
     pDirector->setAnimationInterval(1.0 / 60);
 
+    //setup search path
     vector<string> searchPath;
+    searchPath.push_back("ccb");
+    searchPath.push_back("ccb/ccbResrouces");
     searchPath.push_back(smallResource.directory);
     CCFileUtils::sharedFileUtils()->setSearchPaths(searchPath);
     
     pDirector->setContentScaleFactor(smallResource.size.height/designResolutionSize.height);
     
     // create a scene. it's an autorelease object
-    CCScene *pScene = HelloWorld::scene();
-    
+    CCScene *pScene = MainLayer::scene();
+        
     // run
     pDirector->runWithScene(pScene);
-
+    
     return true;
 }
 
