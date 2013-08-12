@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'samplecocos2dxios' target in the 'samplecocos2dxios' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif
